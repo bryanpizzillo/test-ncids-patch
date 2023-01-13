@@ -1,3 +1,12 @@
-body {
-	font-family: Arial, Helvetica, sans-serif;
+@use '@bryanpizzillo/ncids-with-uswds-patch/sass/ncids-core' as * with (
+	$theme-image-path: '@uswds/uswds/img',
+	$theme-font-path: '@uswds/uswds/fonts',
+);
+//@forward '@bryanpizzillo/ncids-with-uswds-patch/sass/test';
+
+.nci-box {
+  @include u-shadow(2);
+  @include u-padding(3);
 }
+
+//@forward 'uswds';

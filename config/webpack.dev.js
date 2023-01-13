@@ -46,6 +46,12 @@ module.exports = merge(common, {
 					{
 						loader: 'sass-loader',
 						options: {
+							sassOptions: {
+								includePaths: [
+									'./node_modules/@uswds/uswds/packages',
+									'./node_modules',
+								],
+							},
 							sourceMap: true,
 						},
 					},

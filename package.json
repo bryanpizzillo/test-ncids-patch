@@ -13,10 +13,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-	"engines": {
-		"node": ">=16.0.0 <17.0.0",
-		"npm": ">=8.0.0 <9.0.0"
-	},
+  "engines": {
+    "node": ">=16.0.0 <17.0.0",
+    "npm": ">=8.0.0 <9.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
@@ -42,5 +42,8 @@
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@bryanpizzillo/ncids-with-uswds-patch": "^1.0.0"
   }
 }
