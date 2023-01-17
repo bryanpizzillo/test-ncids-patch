@@ -44,6 +44,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@bryanpizzillo/ncids-with-uswds-patch": "^1.0.0"
+    "@bryanpizzillo/ncids-with-uswds-patch-sync": "^1.0.8"
   }
 }

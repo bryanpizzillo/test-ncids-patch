@@ -1,12 +1,17 @@
-@use '@bryanpizzillo/ncids-with-uswds-patch/sass/ncids-core' as * with (
-	$theme-image-path: '@uswds/uswds/img',
-	$theme-font-path: '@uswds/uswds/fonts',
+@forward 'uswds-core' with (
+	$theme-image-path: '@bryanpizzillo/ncids-with-uswds-patch-sync/img',
+	$theme-font-path: '@bryanpizzillo/ncids-with-uswds-patch-sync/fonts',
+	$theme-show-notifications: false,
+	$theme-show-compile-warnings: false,
 );
-//@forward '@bryanpizzillo/ncids-with-uswds-patch/sass/test';
+@forward 'uswds-global';
 
-.nci-box {
-  @include u-shadow(2);
-  @include u-padding(3);
-}
+@forward 'usa-skipnav';
+@forward 'nci-header';
+@forward 'usa-breadcrumb';
+@forward 'usa-prose';
+@forward 'usa-process-list';
 
-//@forward 'uswds';
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap);

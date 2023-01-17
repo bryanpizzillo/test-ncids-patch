@@ -1,17 +1,244 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>The meta title</title>
+		<title>Example Inner Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 	</head>
-	<body class="usa-prose">
-		<h1>This is the title</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquet dui in dui malesuada molestie. Nunc in suscipit dui. Donec consectetur nulla tempus dui fermentum consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam vitae nunc sapien. Nullam efficitur odio ac massa vestibulum cursus. Aliquam sodales et libero ut elementum. In hac habitasse platea dictumst. Ut dignissim nisl nisi, id tempus nunc tincidunt eu. Sed in sagittis felis. Phasellus sagittis nibh ac tincidunt aliquet. Nulla non odio hendrerit, tincidunt quam in, consectetur magna. Vivamus turpis leo, varius non sagittis eu, iaculis et velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer ullamcorper faucibus lectus, ac elementum sapien efficitur quis.</p>
-		<div class="nci-box">
-			This is some text in the box.
+	<body>
+		<a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+		<header id="nci-header" class="nci-header nci-header--extended">
+			<div class="nci-header__navbar">
+				<div class="nci-logo" id="extended-mega-logo">
+					<a href="#" aria-label="National Cancer Institute Homepage">
+						<picture>
+							<source media="(min-width: 1024px)" srcset="./assets/images/logo_NCI.svg" />
+							<img src="./assets/images/logo_NCI_mobile.svg" alt="" />
+						</picture>
+					</a>
+				</div>
+
+				<div class="nci-header-nav__secondary">
+					<button class="usa-button nci-header-mobilenav__open-btn">
+						Menu
+					</button>
+
+					<form class="nci-header-search" role="search">
+						<label class="usa-sr-only" for="nci-header-search__field">
+							Search
+						</label>
+						<input
+							class="usa-input"
+							id="nci-header-search__field"
+							type="search"
+							name="search"
+						/>
+
+						<button
+							class="usa-button nci-header-search__search-button"
+							type="submit"
+							aria-label="search"
+						>
+							<span class="nci-header-search__label" aria-hidden="true"
+								>Search</span
+							>
+							<svg
+								class="usa-icon"
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								viewBox="0 0 24 24"
+								aria-labelledby="search-icon-title"
+							>
+								<title id="search-icon-title">Search</title>
+								<path d="M0 0h24v24H0z" fill="none" />
+								<path
+									d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+								/>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+
+			<nav aria-label="Primary navigation" class="nci-header-nav">
+				<div class="nci-header-nav__inner">
+					<ul class="nci-header-nav__primary">
+						<li class="nci-header-nav__primary-item">
+							<a
+								href="./../assets/data/mega-menu/example-data-1.html"
+								class="nci-header-nav__primary-link usa-current"
+							>
+								<span>Current section</span>
+							</a>
+						</li>
+						<li class="nci-header-nav__primary-item">
+							<a
+								href="./../assets/data/mega-menu/example-data-2.html"
+								class="nci-header-nav__primary-link"
+							>
+								<span>Second Section</span>
+							</a>
+						</li>
+						<li class="nci-header-nav__primary-item">
+							<a
+								href="./../assets/data/mega-menu/example-data-3.html"
+								class="nci-header-nav__primary-link"
+								data-megamenu-disabled="true"
+							>
+								<span>Third Section</span>
+							</a>
+						</li>
+						<li class="nci-header-nav__primary-item">
+							<a
+								href="./../assets/data/mega-menu/example-data-4.html"
+								class="nci-header-nav__primary-link"
+							>
+								<span>Fourth Section</span>
+							</a>
+						</li>
+						<li class="nci-header-nav__primary-item">
+							<a
+								href="./../assets/data/mega-menu/example-data-5.html"
+								class="nci-header-nav__primary-link"
+							>
+								<span>Fifth Section</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div class="grid-container">
+			<div class="grid-row flex-no-wrap">
+				<div class="grid-col-10">
+					<nav class="usa-breadcrumb usa-breadcrumb--wrap" aria-label="Default Breadcrumbs Example">
+						<ol class="usa-breadcrumb__list">
+							<li class="usa-breadcrumb__list-item">
+								<a href="#" class="usa-breadcrumb__link">
+									<span>Home</span>
+								</a>
+							</li>
+							<li class="usa-breadcrumb__list-item">
+								<a href="#" class="usa-breadcrumb__link">
+									<span>About NCI</span>
+								</a>
+							</li>
+							<li class="usa-breadcrumb__list-item">
+								<a href="#" class="usa-breadcrumb__link">
+									<span>NCI Organization</span>
+								</a>
+							</li>
+							<li class="usa-breadcrumb__list-item">
+								<a href="#" class="usa-breadcrumb__link">
+									<span>Office of HIV and AIDS Malignancy</span>
+								</a>
+							</li>
+							<li class="usa-breadcrumb__list-item">
+								<a href="#" class="usa-breadcrumb__link">
+									<span>NCI HIV & AIDS Research</span>
+								</a>
+							</li>
+							<li class="usa-breadcrumb__list-item">
+								<a href="#" class="usa-breadcrumb__link">
+									<span>OHAM Research Activities</span>
+								</a>
+							</li>
+							<li class="usa-breadcrumb__list-item">
+								<a href="#" class="usa-breadcrumb__link">
+									<span>International Conference on HIV/AIDS Malignancies</span>
+								</a>
+							</li>
+							<li class="usa-breadcrumb__list-item usa-current" aria-current="page">
+								<span>Archived International Conference on HIV/AIDS Meeting Materials</span>
+							</li>
+						</ol>
+					</nav>
+				</div>
+
+				<div class="grid-col-auto display-none tablet:display-flex flex-align-center margin-left-auto">
+					<!-- page options went here -->
+				</div>
+			</div>
 		</div>
-		<p>Curabitur luctus aliquet odio ut pharetra. Ut lacus augue, dictum in hendrerit non, blandit sit amet lorem. Morbi non iaculis nisi. Sed orci est, tincidunt at enim ut, varius facilisis nulla. Nullam posuere porttitor rhoncus. Nullam lobortis augue pharetra nisi mollis, non posuere elit pharetra. Vestibulum at dictum quam. Nam vel purus mattis, fringilla turpis et, iaculis magna. Nam venenatis consequat ligula, quis vehicula eros lobortis eget. Nunc et placerat neque, ut sollicitudin nunc. Nullam in volutpat felis. Praesent sodales elit in tortor imperdiet posuere.</p>
-		<p>Sed quis ante commodo, porta erat consectetur, molestie diam. Praesent nec ligula at felis cursus ultrices. Quisque ac eleifend mi, id viverra orci. Proin interdum nibh odio, fringilla venenatis erat accumsan nec. Suspendisse potenti. Nunc in lectus ligula. In condimentum fermentum ullamcorper.</p>
-		<p>Quisque at turpis ac libero tempus volutpat id facilisis nulla. Pellentesque luctus viverra massa, in vestibulum nunc venenatis eu. Integer egestas sodales sem, vel tempor odio sodales non. Donec quis sem sit amet mauris efficitur sodales. Proin mattis commodo ipsum, id placerat erat efficitur non. Curabitur dui leo, elementum ac enim id, iaculis sagittis nibh. Sed consequat interdum neque eget blandit. Fusce nulla urna, tempus nec felis ultricies, vehicula porttitor ligula. Mauris euismod hendrerit neque in semper. In aliquet est eu dolor consequat commodo. Curabitur feugiat venenatis diam, non consequat lorem semper vitae.</p>
-		<p>Aliquam vitae scelerisque neque. Duis et ornare ipsum, non pharetra nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam scelerisque id sem rutrum sodales. Phasellus aliquet ligula non tincidunt mollis. In lectus risus, iaculis eget faucibus in, blandit sed magna. Sed accumsan bibendum ex sit amet vulputate. Aenean pretium tellus sed dapibus placerat. Vestibulum posuere molestie erat quis venenatis. Donec a ullamcorper ex. Nullam ipsum augue, lobortis sed nulla a, tempus egestas enim. Phasellus ex diam, pulvinar id odio at, posuere posuere mi.</p>
+
+		<div class="grid-container">
+			<div class="grid-row grid-gap">
+				<div class="grid-col-3">
+					<nav aria-label="Secondary navigation example">
+						<!-- Side nav went here -->
+					</nav>
+				</div>
+				<main id="main-content" class="desktop:grid-col-9 usa-prose margin-bottom-4">
+					<h1>Page heading (h1)</h1>
+					<p class="usa-intro">
+						The page heading communicates the main focus of the page. Make your
+						page heading descriptive and keep it succinct.
+					</p>
+					<h2>Section heading (h2)</h2>
+					<p>
+						These headings introduce, respectively, sections and subsections
+						within your body copy. As you create these headings, follow the same
+						guidelines that you use when writing section headings: Be succinct,
+						descriptive, and precise.
+					</p>
+					<h3>Subsection heading (h3)</h3>
+					<ol class="usa-process-list">
+						<li class="usa-process-list__item">
+							<h4 class="usa-process-list__heading">Start a process</h4>
+							<p class="margin-top-05">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo,
+								ipsum sed pharetra gravida, orci magna rhoncus neque.
+							</p>
+							<ul>
+								<li>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo,
+									ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio
+									lorem non turpis.
+								</li>
+								<li>
+									Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat
+									condimentum.
+								</li>
+								<li>Aliquam erat volutpat. Sed quis velit.</li>
+							</ul>
+						</li>
+						<li class="usa-process-list__item">
+							<h4 class="usa-process-list__heading">Proceed to the second step</h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo,
+								ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio
+								lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula
+								volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla
+								facilisi. Nulla libero. Vivamus pharetra posuere sapien.
+							</p>
+						</li>
+						<li class="usa-process-list__item">
+							<h4 class="usa-process-list__heading">Complete the step-by-step process</h4>
+							<p>
+								Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat
+								condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla
+								libero. Vivamus pharetra posuere sapien.
+							</p>
+						</li>
+					</ol>
+					<p>
+						Keep each section and subsection focused — a good approach is to
+						include one theme (topic) per section.
+					</p>
+					<h4>Subsection heading (h4)</h4>
+					<p>
+						Use the side navigation menu to help your users quickly skip to
+						different sections of your page. The menu is best suited to displaying
+						a hierarchy with one to three levels and, as we mentioned, to display
+						the sub-navigation of a given page.
+					</p>
+					<p>
+						Read the full documentation on our side navigation on the component
+						page.
+					</p>
+				</main>
+			</div>
+		</div>
+
 	</body>
 </html>

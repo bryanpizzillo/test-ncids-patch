@@ -48,8 +48,8 @@ module.exports = merge(common, {
 						options: {
 							sassOptions: {
 								includePaths: [
-									'./node_modules/@uswds/uswds/packages',
-									'./node_modules',
+									'./node_modules/@bryanpizzillo/ncids-with-uswds-patch-sync/packages',
+									'./node_modules/@bryanpizzillo/ncids-with-uswds-patch-sync/uswds-packages',
 								],
 							},
 							sourceMap: true,
